@@ -37,4 +37,4 @@ def test_divide_by_zero():
 def test_power():
     """Test for additional function"""
     assert additional(8, 2) == 64
-    assert additional(6, 3) == 18
+    assert additional(6, 3) == 216
