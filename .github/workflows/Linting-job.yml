@@ -1,3 +1,12 @@
+name: Linting Job
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:  
 lint:
   name: Code Linting
   runs-on: ubuntu-latest
