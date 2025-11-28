@@ -1,7 +1,7 @@
 # test_calculator.py
 
 import pytest
-from calculator import add, subtract, multiply, divide
+from calculator import add, subtract, multiply, divide, additional
 
 def test_add():
     """Test addition function."""
@@ -31,3 +31,10 @@ def test_divide_by_zero():
     """Test that dividing by zero raises an error."""
     with pytest.raises(ValueError):
         divide(10, 0)
+
+# exercise 2 
+
+def test_power():
+    """Test for additional function"""
+    assert additional(8, 2) == 64
+    assert additional(6, 3) == 18
